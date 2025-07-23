@@ -108,3 +108,107 @@ function welcome() {
 }
 
 // window.welcome();
+
+
+// day 13
+
+var arr = [ 5 ,6,9,5,8,7,2,5,3,1,5,6,12 ];
+console.log(arr);
+console.log(arr.length);
+console.log(arr[1]);
+arr.sort(); 
+console.log(arr);
+arr.push(55);
+console.log(arr);
+arr.pop();
+arr.splice(1 , 2);
+arr.splice(3,4 , 550);
+arr.reverse();
+arr.indexOf(12);
+arr.lastIndexOf(5);
+
+var my_string3 = "my name is akml";
+
+var check1 = my_string3.charAt(4);
+var check2 = my_string3[8];
+var check3 = my_string3.at(7);
+var check4 = my_string3.slice(4);
+var check5 = my_string3.toLowerCase(); 
+var check6 = my_string3.toUpperCase(); 
+var check7 = my_string3.concat("emad");
+var check8 = my_string3 + "emad";
+var check9 = my_string3.trimEnd();
+var check10 = my_string3.trimStart();
+var check11 = my_string3.trim(); 
+var check12 = my_string3.split("&"); 
+
+my_string3.replace("akml" , "Kimo");
+my_string3.replaceAll("akml" , "Kimo");
+my_string3.padEnd(", 12345");
+my_string3.padStart("12345, ");
+
+document.addEventListener("mousemove", function(){
+    console.log("Hello");
+})
+
+document.addEventListener("mousedown", function(){
+    console.log("User click mouse down");
+})
+
+document.addEventListener("mouseup", function(){
+    console.log("User left the mouse up");
+})
+
+document.addEventListener("click", function(){
+    console.log("User click the mouse");
+})
+
+document.addEventListener("mouseenter", function(){
+    console.log("the mouse entered the space");
+})
+
+document.addEventListener("mouseleave", function(){
+    console.log("the mouse left the space");
+})
+
+var myImage = document.querySelector("img")
+
+myImage.addEventListener("drag", function(){
+    console.log("the image moved");
+})
+
+document.addEventListener("keydown", function(e){
+    console.log("use the keyboard");
+    console.log(e.key);
+})
+
+document.addEventListener("keypress", function(){
+    console.log("use the keyboard");
+})
+
+document.addEventListener("keyup", function(){
+    console.log("left the keyboard button");
+})
+
+document.addEventListener("keydown", function(e){
+    console.log("User click on F11 Key");
+    if(e.key == 'F11') {
+        e.preventDefault();
+    }
+})
+
+document.addEventListener("keydown", function(e){
+    if(e.key == 'm') {
+        window.alert("The invoice been saved!")
+    }
+})
+
+var input = document.querySelector("input")
+
+input.addEventListener("focus", function(){
+    console.log("click inside the input field");
+})
+
+input.addEventListener("blur", function(){
+    console.log("left the input field");
+})
